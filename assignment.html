@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Joyfull life</h1>
+        <div class="header_line">
+            <button class="button1">style</button>
+            <button class="button1">design</button>
+            <button class="button1">home</button>
+            <button class="button1">books</button>
+            <button class="about button1">about</button>
+        </div>
+        <br>
+        <button onclick="toggleMode()" id="mode-toggle">
+            <img class="moon" src="https://png.pngtree.com/png-vector/20190703/ourlarge/pngtree-moon-icon-png-image_1536927.jpg" alt="moon-icon">
+            <img class="sun" src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk0MS1taW50eS0wODFfMS5wbmc.png" alt="sun-icon">
+        </button>
+        </div>
+        <div class="whole">
+            <img src="https://media.graphassets.com/5srQvN4bT8CymitI1F6x" alt="flower background">
+            <div class="content">
+                <h2>How to do any thing</h2>
+                <p>Are you looking for an easy guide on how to start a blog?
+    
+                    The step-by-step guide on this page will show you how to create a blog in 20 minutes with just the most basic computer skills.
+                    After completing this guide you will have a beautiful blog that is ready to share with the world.
+                    This guide is made especially for beginners. I will walk you through each and every step, using plenty of pictures and videos to make it all perfectly clear.
+                    
+                    If you get stuck or have questions at any point, simply send me a message and I will do my best to help you out.
+                    Should you start a blog?
+                    One of the misconceptions about starting a blog is that you need to be a great writer to be successful. Nothing could be further from the truth. People read blog sites to get a personal perspective on things, so most bloggers write in a very informal and conversational style.
+                    
+                    And because of the format, many successful bloggers will write about a variety of topics on the same blog.
+                    In addition, you don’t need to be an expert on any of the topics you write about to have a successful blog. For example, visitors to a cooking blog don’t want to read a textbook from a food scientist, they want to hear the experiences of someone who has actually cooked some real meals, mistakes and all.
+                    To be successful as a blogger there is really just one requirement: a passion for your topic.
+                    
+                    At its heart, blogging is about sharing your knowledge with the world. Writing about things that you are passionate about makes the process of starting a successful blog so much easier. As long as you are writing about things that you are genuinely interested in, your passion will shine through and keep your visitors interested.
+                    So why would you go to the trouble of blogging? There are a few reasons:
+                    
+                    Share your story. A blog allows you to have a voice and be heard. You can share your story with the entire world if you so choose. One of the most common ways blogs are used are as a diary where the blogger writes about their daily experiences so that friends, family, and others can all be a part of their lives.
+                    Make money from home. Blogging can be quite lucrative if done correctly. The top bloggers in the world obviously earn quite a bit, but even a part-time blogger can expect to make a nice profit if things are done correctly. The best part about it is that blogging is a form of passive income, since you can spend just a few hours a week writing a piece of content and then continue to profit from it long after the the writing is finished. I go into much more detail on how to blog for money later in this guide.
+                    Recognition for yourself or your business. No, you probably won’t have paparazzi following you around because of your latest post. But a successful blog makes your idea into a reality, and can gain you a ton of recognition in your respective field. Many bloggers are known as experts just because of their blogs, and some have even gotten book and movie deals based on their blogs.
+                    Find a community. Blogging at its heart is interactive. You write a post and people comment on it. This is a good way to connect with people who are interested in the same things as you are. Blogging allows you to teach these people based on your experience, and it gives you the opportunity to learn from your readers as well.
+                </p>
+                <ul>
+                    <li>Share your story. A blog allows you to have a voice and be heard. You can share your story with the entire world if you so choose. One of the most common ways blogs are used are as a diary where the blogger writes about their daily experiences so that friends, family, and others can all be a part of their lives.
+                    </li>    
+                    <li>Make     money from home. Blogging can be quite lucrative if done correctly. The top bloggers in the world obviously earn quite a bit, but even a part-time blogger can expect to make a nice profit if things are done correctly. The best part about it is that blogging is a form of passive income, since you can spend just a few hours a week writing a piece of content and then continue to profit from it long after the the writing is finished. I go into much more detail on how to blog for money later in this guide.
+                    </li> 
+                    <li>   Recognition for yourself or your business. No, you probably won’t have paparazzi following you around because of your latest post. But a successful blog makes your idea into a reality, and can gain you a ton of recognition in your respective field. Many bloggers are known as experts just because of their blogs, and some have even gotten book and movie deals based on their blogs.
+                    </li>
+                    <li>    Find a community. Blogging at its heart is interactive. You write a post and people comment on it. This is a good way to connect with people who are interested in the same things as you are. Blogging allows you to teach these people based on your experience, and it gives you the opportunity to learn from your readers as well.</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+     
+        <script>
+            function toggleMode() {
+                let body = document.body;
+            let modeToggle = document.getElementById('mode-toggle');
+
+            body.classList.toggle("dark");
+
+            let moonIcon = modeToggle.querySelector('.moon');
+            let sunIcon = modeToggle.querySelector('.sun');
+
+            // Toggle visibility of moon and sun icons based on mode
+            if (body.classList.contains('dark')) {
+                moonIcon.style.display = 'inline';
+                sunIcon.style.display = 'none';
+            } else {
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'inline';
+            }
+        }
+        </script>
+        
+
+    </body>
+</html>

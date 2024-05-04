@@ -1,0 +1,68 @@
+h1 {
+    display: flex; /* to make the header in the middle*/
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.header_line {
+    padding: 20px;
+    display: flex;
+    margin-right:30px;
+    justify-content: center;
+    background-color: #d5c9c9;
+}
+img {
+    right: 10px;
+    margin-left: 20px;
+
+}
+.whole {
+    display: flex;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.button1 {
+    /*color: #c6a8a8;*/
+    color: #d5c9c9;
+    margin-left: 30px;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 30px;
+}
+ .moon, .sun {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+.dark {
+    background-color: rgb(18, 17, 17);
+    color: #827e7e;
+}
+.moon {
+    display: none;
+}
+
+.sun {
+    display: inline;
+}
+
+.dark .moon {
+    display: none;
+}
+
+.dark .sun {
+    display: inline;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+}
