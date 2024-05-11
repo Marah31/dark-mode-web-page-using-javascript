@@ -1,73 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>CSS
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Joyfull life</h1>
-        <div class="header_line">
-            <button class="button1">style</button>
-            <button class="button1">design</button>
-            <button class="button1">home</button>
-            <button class="button1">books</button>
-            <button class="about button1">about</button>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tabs--content {
+            display: none;
+        }
+        .tabs--content--active {
+            display: flex;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Joyful life</h1>
+    <header class="header_line">
+        <div class="dark_mode_container">
+            <button onclick="toggleMode()" id="mode-toggle">
+                <img class="moon" src="icons8-moon-50.png" alt="moon icon">
+                <img class="sun" src="icons8-sun-48.png" alt="sun icon">
+                <span class="mode-text">Mode</span>
+            </button>
         </div>
-        <br>
-        <button onclick="toggleMode()" id="mode-toggle">
-            <img class="moon" src="https://png.pngtree.com/png-vector/20190703/ourlarge/pngtree-moon-icon-png-image_1536927.jpg" alt="moon-icon">
-            <img class="sun" src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk0MS1taW50eS0wODFfMS5wbmc.png" alt="sun-icon">
-        </button>
+        <div class="buttons_container">
+            <button class="header_button" data-for-tab="1">home</button>
+            <button class="header_button" data-for-tab="2">style</button>
+            <button class="header_button">design</button>
+            <button class="header_button">books</button>
+            <button class="about header_button">about</button>
         </div>
-        <div class="whole">
-            <img src="https://media.graphassets.com/5srQvN4bT8CymitI1F6x" alt="flower background">
-            <div class="content">
-                <h2>How to do any thing</h2>
-                <p>Are you looking for an easy guide on how to start a blog?
-    
-                    The step-by-step guide on this page will show you how to create a blog in 20 minutes with just the most basic computer skills.
-                    After completing this guide you will have a beautiful blog that is ready to share with the world.
-                    This guide is made especially for beginners. I will walk you through each and every step, using plenty of pictures and videos to make it all perfectly clear.
-                    
-                    If you get stuck or have questions at any point, simply send me a message and I will do my best to help you out.
-                    Should you start a blog?
-                    One of the misconceptions about starting a blog is that you need to be a great writer to be successful. Nothing could be further from the truth. People read blog sites to get a personal perspective on things, so most bloggers write in a very informal and conversational style.
-                    
-                    And because of the format, many successful bloggers will write about a variety of topics on the same blog.
-                    In addition, you don’t need to be an expert on any of the topics you write about to have a successful blog. For example, visitors to a cooking blog don’t want to read a textbook from a food scientist, they want to hear the experiences of someone who has actually cooked some real meals, mistakes and all.
-                    To be successful as a blogger there is really just one requirement: a passion for your topic.
-                    
-                    At its heart, blogging is about sharing your knowledge with the world. Writing about things that you are passionate about makes the process of starting a successful blog so much easier. As long as you are writing about things that you are genuinely interested in, your passion will shine through and keep your visitors interested.
-                    So why would you go to the trouble of blogging? There are a few reasons:
-                    
-                    Share your story. A blog allows you to have a voice and be heard. You can share your story with the entire world if you so choose. One of the most common ways blogs are used are as a diary where the blogger writes about their daily experiences so that friends, family, and others can all be a part of their lives.
-                    Make money from home. Blogging can be quite lucrative if done correctly. The top bloggers in the world obviously earn quite a bit, but even a part-time blogger can expect to make a nice profit if things are done correctly. The best part about it is that blogging is a form of passive income, since you can spend just a few hours a week writing a piece of content and then continue to profit from it long after the the writing is finished. I go into much more detail on how to blog for money later in this guide.
-                    Recognition for yourself or your business. No, you probably won’t have paparazzi following you around because of your latest post. But a successful blog makes your idea into a reality, and can gain you a ton of recognition in your respective field. Many bloggers are known as experts just because of their blogs, and some have even gotten book and movie deals based on their blogs.
-                    Find a community. Blogging at its heart is interactive. You write a post and people comment on it. This is a good way to connect with people who are interested in the same things as you are. Blogging allows you to teach these people based on your experience, and it gives you the opportunity to learn from your readers as well.
-                </p>
-                <ul>
-                    <li>Share your story. A blog allows you to have a voice and be heard. You can share your story with the entire world if you so choose. One of the most common ways blogs are used are as a diary where the blogger writes about their daily experiences so that friends, family, and others can all be a part of their lives.
-                    </li>    
-                    <li>Make     money from home. Blogging can be quite lucrative if done correctly. The top bloggers in the world obviously earn quite a bit, but even a part-time blogger can expect to make a nice profit if things are done correctly. The best part about it is that blogging is a form of passive income, since you can spend just a few hours a week writing a piece of content and then continue to profit from it long after the the writing is finished. I go into much more detail on how to blog for money later in this guide.
-                    </li> 
-                    <li>   Recognition for yourself or your business. No, you probably won’t have paparazzi following you around because of your latest post. But a successful blog makes your idea into a reality, and can gain you a ton of recognition in your respective field. Many bloggers are known as experts just because of their blogs, and some have even gotten book and movie deals based on their blogs.
-                    </li>
-                    <li>    Find a community. Blogging at its heart is interactive. You write a post and people comment on it. This is a good way to connect with people who are interested in the same things as you are. Blogging allows you to teach these people based on your experience, and it gives you the opportunity to learn from your readers as well.</p>
-                    </li>
-                </ul>
-            </div>
-            
+    </header>
+    <br>
+    <div class="home tabs--content tabs--content--active" data-tab="1">
+        <img src="https://media.graphassets.com/5srQvN4bT8CymitI1F6x" alt="flower background">
+        <article>
+            <h2>How to do any thing</h2>
+            <p>Are you looking for an easy guide on how to start a blog?
+
+                The step-by-step guide on this page will show you how to create a blog in 20 minutes with just the most basic computer skills.
+                After completing this guide you will have a beautiful blog that is ready to share with the world.
+                This guide is made especially for beginners. I will walk you through each and every step, using plenty of pictures and videos to make it all perfectly clear.
+                
+                If you get stuck or have questions at any point, simply send me a message and I will do my best to help you out.
+                Should you start a blog?
+                One of the misconceptions about starting a blog is that you need to be a great writer to be successful. Nothing could be further from the truth. People read blog sites to get a personal perspective on things, so most bloggers write in a very informal and conversational style.
+                
+                And because of the format, many successful bloggers will write about a variety of topics on the same blog.
+                In addition, you don’t need to be an expert on any of the topics you write about to have a successful blog. For example, visitors to a cooking blog don’t want to read a textbook from a food scientist, they want to hear the experiences of someone who has actually cooked some real meals, mistakes and all.
+                To be successful as a blogger there is really just one requirement: a passion for your topic.
+                
+                At its heart, blogging is about sharing your knowledge with the world. Writing about things that you are passionate about makes the process of starting a successful blog so much easier. As long as you are writing about things that you are genuinely interested in, your passion will shine through and keep your visitors interested.
+                So why would you go to the trouble of blogging? There are a few reasons:
+                
+                Share your story. A blog allows you to have a voice and be heard. You can share your story with the entire world if you so choose. One of the most common ways blogs are used are as a diary where the blogger writes about their daily experiences so that friends, family, and others can all be a part of their lives.
+                Make money from home. Blogging can be quite lucrative if done correctly. The top bloggers in the world obviously earn quite a bit, but even a part-time blogger can expect to make a nice profit if things are done correctly. The best part about it is that blogging is a form of passive income, since you can spend just a few hours a week writing a piece of content and then continue to profit from it long after the the writing is finished. I go into much more detail on how to blog for money later in this guide.
+                Recognition for yourself or your business. No, you probably won’t have paparazzi following you around because of your latest post. But a successful blog makes your idea into a reality, and can gain you a ton of recognition in your respective field. Many bloggers are known as experts just because of their blogs, and some have even gotten book and movie deals based on their blogs.
+                Find a community. Blogging at its heart is interactive. You write a post and people comment on it. This is a good way to connect with people who are interested in the same things as you are. Blogging allows you to teach these people based on your experience, and it gives you the opportunity to learn from your readers as well.
+            </p>
+            <ul>
+                <li>Share your story. A blog allows you to have a voice and be heard. You can share your story with the entire world if you so choose. One of the most common ways blogs are used are as a diary where the blogger writes about their daily experiences so that friends, family, and others can all be a part of their lives.
+                </li>    
+                <li>Make     money from home. Blogging can be quite lucrative if done correctly. The top bloggers in the world obviously earn quite a bit, but even a part-time blogger can expect to make a nice profit if things are done correctly. The best part about it is that blogging is a form of passive income, since you can spend just a few hours a week writing a piece of content and then continue to profit from it long after the the writing is finished. I go into much more detail on how to blog for money later in this guide.
+                </li> 
+                <li>   Recognition for yourself or your business. No, you probably won’t have paparazzi following you around because of your latest post. But a successful blog makes your idea into a reality, and can gain you a ton of recognition in your respective field. Many bloggers are known as experts just because of their blogs, and some have even gotten book and movie deals based on their blogs.
+                </li>
+                <li>    Find a community. Blogging at its heart is interactive. You write a post and people comment on it. This is a good way to connect with people who are interested in the same things as you are. Blogging allows you to teach these people based on your experience, and it gives you the opportunity to learn from your readers as well.</p>
+                </li>
+            </ul>
+        </article>
+        
+    </div>
+
+    <div class="style_page tabs--content" data-tab="2">
+        <div class="first_panel">
+            <img src="https://www.ikea.com/images/a-wall-in-a-dining-room-with-a-set-of-knoppa-ng-frames-with--1cb2b2dd7f6916ba47c4a2b5c47baadb.jpg?f=xl" alt="decoration image">
+            <h2>Best Aesthetic for your house</h2>
+            <p>I chat a lot about discovering our preferred style at home, architecture, and staying true to your house amongst renovations. This post has been on my “must-draft” list for awhile now, and I’m excited to share a handful of easy tips for determining the aesthetic of your home. From blending your personal style with the existing architecture to making informed renovation decisions, I hope this post will help you hone in on the aesthetic that feels representative of you and your home! Click through to check it out and chat design with me… </p>
         </div>
-     
-        <script>
-            function toggleMode() {
-                let body = document.body;
+        <div class="second_panel">
+            <div class="rectangle"></div>
+            <div class="smaller_rectangle"></div>
+            <h2>Tips to renovate your office room</h2>
+            <p>First and foremost, don’t feel limited to define your personal style. In design interviews, I’m often asked, “How would you describe your aesthetic?”</p>
+            <ul>
+                <li>I believe my aesthetic is ever evolving.</li>
+                <li>For me, it’s always a little influenced by the architectural style and location of our home.</li>
+                <li>I enjoy mixing multiple aesthetics or interior styles.</li>
+            </ul>
+            <p>This topic is something that I have been thinking about for months now and I hope you find the tips and tricks from the wonderful designers we talked to as valuable as I did!  Since June (crazy!) we've been working on designing and building our new home here in Austin and making all kinds of aesthetic decisions from flooring to windows and tile to countertops.  We actually just moved into a new rental "in-between" house in the same neighborhood that we are building in. We need to do a little furniture shopping for things that we need for this house, but will then become a permanent part of our new place as well, so the pressure feels seriously on to make the right choices.  Rather than panic, though, I emailed 5 interior designer friends to get me started on the right track.  Here's what they each had to say about creating a cohesive style story in your home without ending up with something that's too matchy-matchy or cookie-cutter.  Plus, keep reading for the style board I put together for our new place!  Would love to know your thoughts!</p>
+        </div>
+        <div class="third_panel">
+            <img src="https://www.pennington.com/-/media/Project/OneWeb/Pennington/Images/blog/fertilizer/8-Steps-to-Growing-a-Healthy-Indoor-Garden-Anytime/how-to-grow-a-healthy-indoor-garden-h.jpg" alt="plants">
+            <h2>How Plants Can Impact Your Vision</h2>
+            <p> plants improves focus, lowers stress levels, keeps the mind from indulging in negative thought patterns, and even helps people recover more quickly from illness.</p>
+            <p>To avoid having your house looking too matching yet still cohesive, it's good to let your decorating evolve. Don't decorate all at once but let it ebb and flow over time. I am constantly changing items and bringing new things into our home.
+                Try to determine what you love and then go about filling your house with those things. Keep out items you don't like - I prefer having less and even half-empty rooms than having items I don't like.
+                I love keeping a balance between old and new. I love the mix of antiques mixed with modern pieces. I try to keep this balance in every room.
+                I love a relatively neutral balance. My go-to color is blue and you will find it in every room. In the kitchen, it's in the dishes on my open shelving, in the living and dining rooms, it's in the rugs, and in the bathroom, it's the wallpaper. If you prefer a lot of color, embrace that 100%. It's important to keep it cohesive.
+                Finally, and most importantly, avoid sets of furniture. It's much more interesting to have a mix. Old chairs with a modern table, a traditional sofa paired with modern chairs - this will make your space more interesting and will still be cohesive if you repeat it in every room.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMode() {
+            let body = document.body;
             let modeToggle = document.getElementById('mode-toggle');
 
             body.classList.toggle("dark");
@@ -84,8 +129,33 @@
                 sunIcon.style.display = 'inline';
             }
         }
-        </script>
-        
 
-    </body>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabButtons = document.querySelectorAll(".header_button");
+            const tabContents = document.querySelectorAll(".tabs--content");
+
+            // Add click event listener to each tab button
+            tabButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const tabNumber = this.dataset.forTab;
+
+                    // Hide all tab contents
+                    tabContents.forEach(content => {
+                        content.classList.remove("tabs--content--active");
+                    });
+
+                    // Show the corresponding tab content
+                    const tabContent = document.querySelector(`.tabs--content[data-tab="${tabNumber}"]`);
+                    if (tabContent) {
+                        tabContent.classList.add("tabs--content--active");
+                    }
+                });
+            });
+
+            // Simulate click on Home tab button when the page loads
+            const homeTabButton = document.querySelector('.header_button[data-for-tab="1"]');
+            homeTabButton.click();
+        });
+    </script>
+</body>
 </html>
