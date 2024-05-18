@@ -112,7 +112,7 @@
 
     <script>
 
-         function toggleMode() {
+          function toggleMode() {
             let body = document.body;
             let modeToggle = document.getElementById('mode-toggle');
 
@@ -130,33 +130,33 @@
                 sunIcon.style.display = 'inline';
             }
         }
-        document.addEventListener("DOMContentLoaded", function () {
-    const tabButtons = document.querySelectorAll(".header_button");
-    const tabContents = document.querySelectorAll(".tabs--content");
 
-    // Add click event listener to the parent container of tab buttons
-    document.querySelector('.buttons_container').addEventListener('click', function (event) {
-        const button = event.target.closest('.header_button');
-        if (!button) return; // Exit if the click is not on a tab button
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabButtons = document.querySelectorAll(".header_button");
+            const tabContents = document.querySelectorAll(".tabs--content");
 
-        const tabNumber = button.dataset.forTab;
+            // Add click event listener to each tab button
+            tabButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const tabNumber = this.dataset.forTab;
 
-        // Hide all tab contents
-        tabContents.forEach(content => {
-            content.classList.remove("tabs--content--active");
+                    // Hide all tab contents
+                    tabContents.forEach(content => {
+                        content.classList.remove("tabs--content--active");
+                    });
+
+                    // Show the corresponding tab content
+                    const tabContent = document.querySelector(`.tabs--content[data-tab="${tabNumber}"]`);
+                    if (tabContent) {
+                        tabContent.classList.add("tabs--content--active");
+                    }
+                });
+            });
+
+            // Simulate click on Home tab button when the page loads
+            const homeTabButton = document.querySelector('.header_button[data-for-tab="1"]');
+            homeTabButton.click();
         });
-
-        // Show the corresponding tab content
-        const tabContent = document.querySelector(`.tabs--content[data-tab="${tabNumber}"]`);
-        if (tabContent) {
-            tabContent.classList.add("tabs--content--active");
-        }
-    });
-
-    // Simulate click on Home tab button when the page loads
-    const homeTabButton = document.querySelector('.header_button[data-for-tab="1"]');
-    homeTabButton.click();
-});
     </script>
 </body>
 </html>
