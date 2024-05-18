@@ -179,10 +179,9 @@ button img {
     border-color: transparent transparent transparent rgb(166, 128, 78); 
 }
 
-.tabs--button--active{
-    font-weight: bold;
-    border-bottom: #a66969;
-    background: #c09d9d;
 
+
+.buttons_container:hover
+.buttons_container.active {
+    background:#753b3b;
 }
-
