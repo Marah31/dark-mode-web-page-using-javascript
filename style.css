@@ -180,8 +180,11 @@ button img {
 }
 
 
+.header_button:hover {
+  background-color: #d21404;
+}
 
-.buttons_container:hover
-.buttons_container.active {
-    background:#753b3b;
+.header_button.active {
+  background-color: #d21404; /* Active background color */
+  color: white; /* Active text color */
 }
