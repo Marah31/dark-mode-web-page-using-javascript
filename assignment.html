@@ -111,6 +111,25 @@
     </div>
 
     <script>
+
+         function toggleMode() {
+            let body = document.body;
+            let modeToggle = document.getElementById('mode-toggle');
+
+            body.classList.toggle("dark");
+
+            let moonIcon = modeToggle.querySelector('.moon');
+            let sunIcon = modeToggle.querySelector('.sun');
+
+            // Toggle visibility of moon and sun icons based on mode
+            if (body.classList.contains('dark')) {
+                moonIcon.style.display = 'inline';
+                sunIcon.style.display = 'none';
+            } else {
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'inline';
+            }
+        }
         document.addEventListener("DOMContentLoaded", function () {
     const tabButtons = document.querySelectorAll(".header_button");
     const tabContents = document.querySelectorAll(".tabs--content");
