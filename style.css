@@ -181,3 +181,7 @@ button img {
 
 
 
+.buttons_container:hover
+.buttons_container.active {
+    background:#753b3b;
+}
